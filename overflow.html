@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>overflow</title>
+    <style>
+        .box
+        {
+            width: 300px;
+            border: 3px solid steelblue;
+            height: 300px;
+            overflow: scroll; /* always show scroll bars */
+        }
+        /* #box-1{
+            overflow: auto; // scroll bar will be visible only when content exceeds the box size 
+            overflow-x: hidden; // horizontal scroll bar will not be visible
+        } */
+         .ellipsis{
+            border: 2px solid steelblue;
+            width: 200px;
+            white-space: nowrap; /* prevent text from wrapping to the next line */
+            overflow: hidden; /* hide any overflowed text */
+            text-overflow: ellipsis; /* add ellipsis (...) to indicate overflowed text */
+            text-overflow: clip; /* hide overflowed text without adding ellipsis */
+
+         }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <p title="investing at least 6-8hrs every single day.No gap at all" class="ellipsis"> I am a serious learner. I am investing at least 6-8hrs every single day.No gap at all</p>
+    </header>
+    <section>
+        <!-- .box*2>h3{My Text Box $}+p>lorem200 -->
+        <div class="box" id="box-1">
+            <h3>My Text Box 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, veniam suscipit. Voluptas fuga ullam nihil vel earum, voluptatibus quia, eligendi placeat expedita optio quidem fugiat aliquid dolore inventore ea alias iusto rem itaque asperiores quibusdam impedit, ab tempora enim harum. Nihil, placeat. Amet laborum, in animi sunt fuga aperiam quisquam eveniet commodi corporis dolores quod veritatis sint excepturi? Natus quisquam id recusandae voluptates impedit repellendus quod labore illo eligendi eum, quasi, ducimus deleniti. Iusto pariatur ad, quas velit voluptatem commodi vero sit officia eaque ab similique cupiditate dicta culpa vel officiis tenetur eum soluta accusantium consequuntur ullam, tempora nobis. Exercitationem numquam fugiat ipsa fuga eius voluptate, doloribus, voluptas aperiam nobis maiores minus quo quis molestias incidunt ducimus, quibusdam necessitatibus? Molestias modi, incidunt eligendi necessitatibus obcaecati corrupti fuga in illo, non dolorem rem odit quae cumque sit? Nam consectetur ut dolores repellat deleniti explicabo fugit inventore voluptate sit cupiditate officiis, quisquam assumenda nemo, vel id odio omnis aliquid dignissimos. Illum recusandae quia quo, cum consectetur ipsam fuga optio quibusdam quaerat, voluptatem placeat nostrum non quisquam distinctio nulla dignissimos officia eligendi? Commodi, ex. Dolorum quis quos aut! Eos rerum voluptate rem aliquid quia autem adipisci asperiores. Atque eligendi maxime iure obcaecati aliquam?</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Fugiat, quam odit aliquid sequi voluptatum qui iste velit autem cum dolores eveniet tempora mollitia nesciunt, tenetur enim, ratione in placeat. Saepe deserunt velit, commodi quasi animi cupiditate neque ab reprehenderit mollitia amet inventore quis iure. Sapiente, at quasi? Quidem at, perspiciatis distinctio odio veritatis nam placeat modi, dignissimos error dolores ea ratione nobis, quibusdam in tempore. Placeat corrupti tenetur neque reprehenderit quas dolor eum nam soluta consequuntur, totam tempora ducimus tempore. Beatae similique unde mollitia, voluptatibus natus error impedit! Voluptate labore quos illo modi. Nostrum rerum id ea repellendus exercitationem numquam, voluptatibus quas mollitia reprehenderit quis corporis adipisci rem consequatur praesentium, debitis tenetur. Illum et molestias iusto suscipit eius, soluta expedita facere architecto adipisci, quaerat hic veritatis obcaecati amet consectetur sed qui unde delectus dignissimos repudiandae. Blanditiis ipsam eaque repellendus laborum quaerat distinctio, sed, debitis eum nisi fugiat exercitationem assumenda eveniet animi nemo quisquam maxime voluptates placeat nesciunt eius? Eligendi dolorum labore reiciendis dignissimos enim ducimus iure blanditiis officiis neque error ab mollitia, facere necessitatibus adipisci velit accusamus, cupiditate tempore, esse possimus illo corrupti doloribus eum. Expedita aperiam molestiae suscipit, eaque dolor porro aut natus blanditiis illum debitis magnam iste quasi soluta repellat et maxime eum velit, architecto eligendi.</p>
+        </div>
+
+        <div class="box">
+            <h3>Text Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere placeat itaque dolores fugiat cumque doloremque repellat reprehenderit consequatur ipsum.</p>
+        </div>
+
+    </section>
 </body>
 </html>
